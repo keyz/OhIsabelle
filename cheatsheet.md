@@ -90,47 +90,71 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
   <tr>
     <td>  </td>
     <td>assume p: "P" and q: "Q"</td>
-    <td>assume 1: ”P ∧ Q” and 2: ”P ∨ Q” and 3: ”P −→ Q” and 4: ”P” and5:”∀ n.?Tn” and6:”∃ n.?Tn”</td>
+    <td>assume 1: "P ∧ Q" <br>
+          and 2: "P ∨ Q" <br>
+          and 3: "P ⟶ Q" <br>
+          and 4: "P" <br>
+          and 5: "∀n. ?Tn" <br>
+          and 6: "∃n. ?Tn"</td>
   </tr>
   <tr>
     <td>and</td>
-    <td>from p q have ”P ∧ Q” ..
-have ”P ∧ Q” proof
-from p show ”P” . next
-from q show ”Q” . qed</td>
-    <td>from 1 have ”P” .. from 1 have ”Q” ..</td>
+    <td>from p q have "P ∧ Q" .. <br>
+        have "P ∧ Q" <br>
+        proof <br>
+          from p show "P" . <br>
+        next <br>
+          from q show "Q" . <br>
+        qed</td>
+    <td>from 1 have "P" .. <br>
+        from 1 have "Q" ..</td>
   </tr>
   <tr>
     <td>or</td>
-    <td>from p have ”P ∨ Q” .. from q have ”P ∨ Q” ..
-have ”P ∨ Q” proof (rule disjI1)
-from p show ”P” . qed
-have ”P ∨ Q” proof (rule disjI2)
-from q show ”Q” . qed</td>
-    <td>from 2 have ”?R” proof
-assume p: ”P”
-from p show ”?R” .. next
-assume q: ”Q”
-from q show ”?R” .. qed</td>
+    <td>from p have "P ∨ Q" .. <br>
+        from q have "P ∨ Q" .. <br>
+        
+        have "P ∨ Q" <br>
+        proof (rule disjI1) <br>
+          from p show "P" . <br>
+        qed <br>
+
+        have "P ∨ Q" <br>
+        proof (rule disjI2) <br>
+          from q show "Q" . <br>
+        qed</td>
+    <td>from 2 have "?R" <br>
+        proof <br>
+          assume p: "P" <br>
+          from p show "?R" .. <br>
+        next <br>
+          assume q: "Q" <br>
+          from q show "?R" .. <br>
+        qed</td>
   </tr>
   <tr>
     <td>implication</td>
-    <td>have ”P −→ Q” proof
-assume ”P”
-from q show ”Q” . qed
+    <td>have "P ⟶ Q" <br>
+        proof <br>
+          assume "P" <br>
+          from q show "Q" . <br>
+        qed 
 </td>
-    <td>from 3 4 have ”Q” ..</td>
+    <td>from 3 4 have "Q" ..</td>
   </tr>
   <tr>
     <td>for all</td>
-    <td>have ”∀ n. ?S n” proof
-fix n
-show ”?S n” .. qed</td>
-    <td>from 5 have ”?T 42” ..</td>
+    <td>have "∀n. ?S n" <br>
+        proof <br>
+          fix n <br>
+          show "?S n" .. <br>
+        qed</td>
+    <td>from 5 have "?T 42" ..</td>
   </tr>
   <tr>
-    <td>exists </td>
-    <td>have ”?S 42” .. hence ”∃ n. ?S n” ..</td>
-    <td>from 6 obtain n where ”?T n” ..</td>
+    <td>exists</td>
+    <td>have "?S 42" .. <br>
+        hence "∃n. ?S n" ..</td>
+    <td>from 6 obtain n where "?T n" ..</td>
   </tr>
 </table>
