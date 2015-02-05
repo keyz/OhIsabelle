@@ -2,6 +2,9 @@
 Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
 
 
+----
+
+
 <table>
   <tr>
     <th colspan="2">Prove-it Table for Propositional Logic</th>
@@ -98,7 +101,7 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
         <code>  and 6: "∃n. ?Tn"</code></td>
   </tr>
   <tr>
-    <td>and</td>
+    <td align="center">and</td>
     <td><code>from p q have "P ∧ Q" ..</code><br>
         <br>
         <code>have "P ∧ Q"</code><br>
@@ -111,7 +114,7 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
         <code>from 1 have "Q" ..</code></td>
   </tr>
   <tr>
-    <td>or</td>
+    <td align="center">or</td>
     <td><code>from p have "P ∨ Q" ..</code><br>
         <br>
         <code>from q have "P ∨ Q" ..</code><br>
@@ -135,7 +138,7 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
         <code>qed</td>
   </tr>
   <tr>
-    <td>implication</td>
+    <td align="center">implication</td>
     <td><code>have "P ⟶ Q"</code><br>
         <code>proof</code><br>
         <code>  assume "P"</code><br>
@@ -145,12 +148,12 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
     <td><code>from 3 4 have "Q" ..</code></td>
   </tr>
   <tr>
-    <td>False</td>
+    <td align="center">False</td>
     <td><code>from np p have "False" ..</code></td>
     <td><code>from 7 have "?R" ..</code></td>
   </tr>
   <tr>
-    <td>for all</td>
+    <td align="center">for all</td>
     <td><code>have "∀n. ?S n"</code><br>
         <code>proof</code><br>
         <code>  fix n</code><br>
@@ -159,7 +162,7 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
     <td><code>from 5 have "?T 42" ..</code></td>
   </tr>
   <tr>
-    <td>exists</td>
+    <td align="center">exists</td>
     <td><code>have "?S 42" ..</code><br>
         <code>hence "∃n. ?S n" ..</code></td>
     <td><code>from 6 obtain n where "?T n" ..</code></td>
