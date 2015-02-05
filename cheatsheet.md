@@ -142,12 +142,12 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
         <code>  from q show "Q" .</code><br>
         <code>qed</code>
 </td>
-    <td><code>from 3 4 have "Q" ..<code></td>
+    <td><code>from 3 4 have "Q" ..</code></td>
   </tr>
   <tr>
     <td>False</td>
     <td><code>from np p have "False" ..</code></td>
-    <td><code>from 7 have "?R" ..<code></td>
+    <td><code>from 7 have "?R" ..</code></td>
   </tr>
   <tr>
     <td>for all</td>
