@@ -7,20 +7,20 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
     <th colspan="2">Prove-it Table for Propositional Logic</th>
   </tr>
   <tr>
-    <td>¬ P</td>
-    <td>assume P and prove False</td>
+    <td><code>¬ P</code></td>
+    <td>assume <code>P</code> and prove <code>False</code></td>
   </tr>
   <tr>
-    <td>P ∧ Q</td>
-    <td>prove P and also prove Q</td>
+    <td><code>P ∧ Q</code></td>
+    <td>prove <code>P</code> and also prove <code>Q</code></td>
   </tr>
   <tr>
-    <td>P ∨ Q</td>
-    <td>prove one of P or Q</td>
+    <td><code>P ∨ Q</code></td>
+    <td>prove one of <code>P</code> or <code>Q</code></td>
   </tr>
   <tr>
-    <td>P ⟶ Q</td>
-    <td>assume P and then prove Q</td>
+    <td><code>P ⟶ Q</code></td>
+    <td>assume <code>P</code> and then prove <code>Q</code></td>
   </tr>
 </table>
 
@@ -29,24 +29,24 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
     <th colspan="2">Use-it Table for Propositional Logic</th>
   </tr>
   <tr>
-    <td>from (¬ P) and P </td>
-    <td>have Q</td>
+    <td>from <code>(¬ P)</code> and <code>P</code></td>
+    <td>have <code>Q</code></td>
   </tr>
   <tr>
-    <td>from P ∧ Q </td>
-    <td>have P</td>
+    <td>from <code>P ∧ Q</code></td>
+    <td>have <code>P</code></td>
   </tr>
   <tr>
-    <td>from P ∧ Q</td>
-    <td>have Q</td>
+    <td>from <code>P ∧ Q</code></td>
+    <td>have <code>Q</code></td>
   </tr>
   <tr>
-    <td>from P ∨ Q, P ⟶ R, and Q ⟶ R</td>
-    <td>have R</td>
+    <td>from <code>P ∨ Q</code>, <code>P ⟶ R</code>, and <code>Q ⟶ R</code></td>
+    <td>have <code>R</code></td>
   </tr>
   <tr>
-    <td>from P ⟶ Q and P</td>
-    <td>have Q</td>
+    <td>from <code>P ⟶ Q</code> and <code>P</code></td>
+    <td>have <code>Q</code></td>
   </tr>
 </table>
 
@@ -55,12 +55,12 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
     <th colspan="2">Prove-it for First-order Logic</th>
   </tr>
   <tr>
-    <td>∀x. (P x)</td>
-    <td>fix x and prove (P x)</td>
+    <td><code>∀x. (P x)</code></td>
+    <td>fix <code>x</code> and prove <code>(P x)</code></td>
   </tr>
   <tr>
-    <td>∃x. (P x)</td>
-    <td>prove (P y) for a particular y</td>
+    <td><code>∃x. (P x)</code></td>
+    <td>prove <code>(P y)</code> for a particular <code>y</code></td>
   </tr>
 </table>
 
@@ -69,12 +69,12 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
     <th colspan="2">Use-it for First-order Logic</th>
   </tr>
   <tr>
-    <td>∀x. (P x)</td>
-    <td>have (P w) for any choice of w</td>
+    <td><code>∀x. (P x)</code></td>
+    <td>have <code>(P w)</code> for any choice of <code>w</code></td>
   </tr>
   <tr>
-    <td>∃x. (P x)</td>
-    <td>have (P z) for a freshly obtained variable z</td>
+    <td><code>∃x. (P x)</code></td>
+    <td>have <code>(P z)</code> for a freshly obtained variable <code>z</code></td>
   </tr>
 </table>
 
@@ -90,70 +90,77 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
   <tr>
     <td>  </td>
     <td><code>assume p: "P" and q: "Q"</code></td>
-    <td><code>assume 1: "P ∧ Q" </code><br>
-        <code>  and 2: "P ∨ Q" </code><br>
-        <code>  and 3: "P ⟶ Q" </code><br>
-        <code>  and 4: "P" </code><br>
-        <code>  and 5: "∀n. ?Tn" </code><br>
+    <td><code>assume 1: "P ∧ Q"</code><br>
+        <code>  and 2: "P ∨ Q"</code><br>
+        <code>  and 3: "P ⟶ Q"</code><br>
+        <code>  and 4: "P"</code><br>
+        <code>  and 5: "∀n. ?Tn"</code><br>
         <code>  and 6: "∃n. ?Tn"</code></td>
   </tr>
   <tr>
     <td>and</td>
-    <td><code>from p q have "P ∧ Q" .. </code></code><br>
-        <code>  have "P ∧ Q" </code><br>
-        <code>proof </code><br>
-        <code>  from p show "P" . </code><br>
-        <code>next </code><br>
-        <code>  from q show "Q" . </code><br>
+    <td><code>from p q have "P ∧ Q" ..</code><br>
+        <br>
+        <code>have "P ∧ Q"</code><br>
+        <code>proof</code><br>
+        <code>  from p show "P" .</code><br>
+        <code>next</code><br>
+        <code>  from q show "Q" .</code><br>
         <code>qed</code></td>
-    <td><code>from 1 have "P" .. </code><br>
+    <td><code>from 1 have "P" ..</code><br>
         <code>from 1 have "Q" ..</code></td>
   </tr>
   <tr>
     <td>or</td>
-    <td><code>from p have "P ∨ Q" .. </code><br>
-        <code>from q have "P ∨ Q" .. </code><br>
-
-        <code>have "P ∨ Q" </code><br>
-        <code>proof (rule disjI1) </code><br>
-        <code>  from p show "P" . </code><br>
-        <code>qed </code><br>
-
-        <code>have "P ∨ Q" </code><br>
-        <code>proof (rule disjI2) </code><br>
-        <code>  from q show "Q" . </code><br>
+    <td><code>from p have "P ∨ Q" ..</code><br>
+        <br>
+        <code>from q have "P ∨ Q" ..</code><br>
+        <br>
+        <code>have "P ∨ Q"</code><br>
+        <code>proof (rule disjI1)</code><br>
+        <code>  from p show "P" .</code><br>
+        <code>qed</code><br>
+        <br>
+        <code>have "P ∨ Q"</code><br>
+        <code>proof (rule disjI2)</code><br>
+        <code>  from q show "Q" .</code><br>
         <code>qed</td>
-    <td><code>from 2 have "?R" </code><br>
-        <code>proof </code><br>
-        <code>  assume p: "P" </code><br>
-        <code>  from p show "?R" .. </code><br>
-        <code>next </code><br>
-        <code>  assume q: "Q" </code><br>
-        <code>  from q show "?R" .. </code><br>
+    <td><code>from 2 have "?R"</code><br>
+        <code>proof</code><br>
+        <code>  assume p: "P"</code><br>
+        <code>  from p show "?R" ..</code><br>
+        <code>next</code><br>
+        <code>  assume q: "Q"</code><br>
+        <code>  from q show "?R" ..</code><br>
         <code>qed</td>
   </tr>
   <tr>
     <td>implication</td>
-    <td><code>have "P ⟶ Q" </code><br>
-        <code>proof </code><br>
-        <code>  assume "P" </code><br>
-        <code>  from q show "Q" . </code><br>
-        <code>qed </code>
+    <td><code>have "P ⟶ Q"</code><br>
+        <code>proof</code><br>
+        <code>  assume "P"</code><br>
+        <code>  from q show "Q" .</code><br>
+        <code>qed</code>
 </td>
     <td><code>from 3 4 have "Q" ..<code></td>
   </tr>
   <tr>
+    <td>False</td>
+    <td><code>from np p have "False" ..</code></td>
+    <td><code>from 7 have "?R" ..<code></td>
+  </tr>
+  <tr>
     <td>for all</td>
-    <td><code>have "∀n. ?S n" </code><br>
-        <code>proof </code><br>
-        <code>  fix n </code><br>
-        <code>  show "?S n" .. </code><br>
+    <td><code>have "∀n. ?S n"</code><br>
+        <code>proof</code><br>
+        <code>  fix n</code><br>
+        <code>  show "?S n" ..</code><br>
         <code>qed</td>
     <td><code>from 5 have "?T 42" ..</code></td>
   </tr>
   <tr>
     <td>exists</td>
-    <td><code>have "?S 42" .. </code><br>
+    <td><code>have "?S 42" ..</code><br>
         <code>hence "∃n. ?S n" ..</code></td>
     <td><code>from 6 obtain n where "?T n" ..</code></td>
   </tr>
