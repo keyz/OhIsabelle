@@ -89,72 +89,72 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
   </tr>
   <tr>
     <td>  </td>
-    <td>assume p: "P" and q: "Q"</td>
-    <td>assume 1: "P ∧ Q" <br>
-          and 2: "P ∨ Q" <br>
-          and 3: "P ⟶ Q" <br>
-          and 4: "P" <br>
-          and 5: "∀n. ?Tn" <br>
-          and 6: "∃n. ?Tn"</td>
+    <td><code>assume p: "P" and q: "Q"</code></td>
+    <td><code>assume 1: "P ∧ Q" </code><br>
+        <code>  and 2: "P ∨ Q" </code><br>
+        <code>  and 3: "P ⟶ Q" </code><br>
+        <code>  and 4: "P" </code><br>
+        <code>  and 5: "∀n. ?Tn" </code><br>
+        <code>  and 6: "∃n. ?Tn"</code></td>
   </tr>
   <tr>
     <td>and</td>
-    <td>from p q have "P ∧ Q" .. <br>
-        have "P ∧ Q" <br>
-        proof <br>
-          from p show "P" . <br>
-        next <br>
-          from q show "Q" . <br>
-        qed</td>
-    <td>from 1 have "P" .. <br>
-        from 1 have "Q" ..</td>
+    <td><code>from p q have "P ∧ Q" .. </code></code><br>
+        <code>  have "P ∧ Q" </code><br>
+        <code>proof </code><br>
+        <code>  from p show "P" . </code><br>
+        <code>next </code><br>
+        <code>  from q show "Q" . </code><br>
+        <code>qed</code></td>
+    <td><code>from 1 have "P" .. </code><br>
+        <code>from 1 have "Q" ..</code></td>
   </tr>
   <tr>
     <td>or</td>
-    <td>from p have "P ∨ Q" .. <br>
-        from q have "P ∨ Q" .. <br>
-        
-        have "P ∨ Q" <br>
-        proof (rule disjI1) <br>
-          from p show "P" . <br>
-        qed <br>
+    <td><code>from p have "P ∨ Q" .. </code><br>
+        <code>from q have "P ∨ Q" .. </code><br>
 
-        have "P ∨ Q" <br>
-        proof (rule disjI2) <br>
-          from q show "Q" . <br>
-        qed</td>
-    <td>from 2 have "?R" <br>
-        proof <br>
-          assume p: "P" <br>
-          from p show "?R" .. <br>
-        next <br>
-          assume q: "Q" <br>
-          from q show "?R" .. <br>
-        qed</td>
+        <code>have "P ∨ Q" </code><br>
+        <code>proof (rule disjI1) </code><br>
+        <code>  from p show "P" . </code><br>
+        <code>qed </code><br>
+
+        <code>have "P ∨ Q" </code><br>
+        <code>proof (rule disjI2) </code><br>
+        <code>  from q show "Q" . </code><br>
+        <code>qed</td>
+    <td><code>from 2 have "?R" </code><br>
+        <code>proof </code><br>
+        <code>  assume p: "P" </code><br>
+        <code>  from p show "?R" .. </code><br>
+        <code>next </code><br>
+        <code>  assume q: "Q" </code><br>
+        <code>  from q show "?R" .. </code><br>
+        <code>qed</td>
   </tr>
   <tr>
     <td>implication</td>
-    <td>have "P ⟶ Q" <br>
-        proof <br>
-          assume "P" <br>
-          from q show "Q" . <br>
-        qed 
+    <td><code>have "P ⟶ Q" </code><br>
+        <code>proof </code><br>
+        <code>  assume "P" </code><br>
+        <code>  from q show "Q" . </code><br>
+        <code>qed </code>
 </td>
-    <td>from 3 4 have "Q" ..</td>
+    <td><code>from 3 4 have "Q" ..<code></td>
   </tr>
   <tr>
     <td>for all</td>
-    <td>have "∀n. ?S n" <br>
-        proof <br>
-          fix n <br>
-          show "?S n" .. <br>
-        qed</td>
-    <td>from 5 have "?T 42" ..</td>
+    <td><code>have "∀n. ?S n" </code><br>
+        <code>proof </code><br>
+        <code>  fix n </code><br>
+        <code>  show "?S n" .. </code><br>
+        <code>qed</td>
+    <td><code>from 5 have "?T 42" ..</code></td>
   </tr>
   <tr>
     <td>exists</td>
-    <td>have "?S 42" .. <br>
-        hence "∃n. ?S n" ..</td>
-    <td>from 6 obtain n where "?T n" ..</td>
+    <td><code>have "?S 42" .. </code><br>
+        <code>hence "∃n. ?S n" ..</code></td>
+    <td><code>from 6 obtain n where "?T n" ..</code></td>
   </tr>
 </table>
