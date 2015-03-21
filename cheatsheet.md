@@ -92,13 +92,14 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
   </tr>
   <tr>
     <td>  </td>
-    <td><code>assume p: "P" and q: "Q"</code></td>
+    <td><code>assume p: "P" and q: "Q" and np: "¬ P"</code></td>
     <td><code>assume 1: "P ∧ Q"</code><br>
         <code>  and 2: "P ∨ Q"</code><br>
         <code>  and 3: "P ⟶ Q"</code><br>
         <code>  and 4: "P"</code><br>
-        <code>  and 5: "∀n. ?Tn"</code><br>
-        <code>  and 6: "∃n. ?Tn"</code></td>
+        <code>  and 5: "∀n. ?T n"</code><br>
+        <code>  and 6: "∃n. ?T n"</code>
+        <code>  and 7: "False"</code></td>
   </tr>
   <tr>
     <td align="center">and</td>
