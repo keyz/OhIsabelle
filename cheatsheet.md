@@ -7,7 +7,7 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
 
 <table>
   <tr>
-    <th colspan="2">Prove-it Table for Propositional Logic</th>
+    <th colspan="2">Introduction Rules for Propositional Logic</th>
   </tr>
   <tr>
     <td><code>¬ P</code></td>
@@ -29,11 +29,11 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
 
 <table>
   <tr>
-    <th colspan="2">Use-it Table for Propositional Logic</th>
+    <th colspan="2">Elimination Rules for Propositional Logic</th>
   </tr>
   <tr>
     <td>from <code>(¬ P)</code> and <code>P</code></td>
-    <td>have <code>Q</code></td>
+    <td>have <code>Q</code> (or whatever you want)</td>
   </tr>
   <tr>
     <td>from <code>P ∧ Q</code></td>
@@ -55,7 +55,7 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
 
 <table>
   <tr>
-    <th colspan="2">Prove-it for First-order Logic</th>
+    <th colspan="2">Introduction Rules for First-order Logic</th>
   </tr>
   <tr>
     <td><code>∀x. (P x)</code></td>
@@ -69,7 +69,7 @@ Notes taken from https://dl.dropboxusercontent.com/u/10275252/IntroPLTheory.pdf
 
 <table>
   <tr>
-    <th colspan="2">Use-it for First-order Logic</th>
+    <th colspan="2">Elimination Rules for First-order Logic</th>
   </tr>
   <tr>
     <td><code>∀x. (P x)</code></td>
